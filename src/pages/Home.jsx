@@ -1,11 +1,12 @@
 import React from 'react';
+import Section from '../components/Section';
 
 function Home({ data }) {
   return (
-    <div className="home">
-      <h1>Welcome to {data.name}'s Portfolio</h1>
+    <Section>
+      <h1>{data.name}</h1>
       <p>{data.summary}</p>
-    </div>
+    </Section>
   );
 }
 

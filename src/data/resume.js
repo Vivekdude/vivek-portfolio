@@ -27,7 +27,16 @@ const resumeData = {
         "Played central role in database development, including schema design, T-SQL queries, stored procedures, tables, SQL views, and user-defined functions."
       ]
     }
-  ]
+  ],
+  certifications: [
+    "Microsoft Certified: Azure Developer Associate",
+    "Certified Scrum Master",
+  ],
+  contact: {
+    email: "vivek.shukla@example.com",
+    phone: "+1 (555) 123-4567",
+    linkedin: "https://www.linkedin.com/in/vivekshukla",
+  }
 };
 
 export default resumeData;

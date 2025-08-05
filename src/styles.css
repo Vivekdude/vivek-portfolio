@@ -1,34 +1,81 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
 /* Header styles */
 .header {
-  background-color: #333;
-  color: white;
+  background-color: #222;
+  color: #fff;
   padding: 1rem;
 }
 
 .header nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  gap: 1.5rem;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
 .header nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .header nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Section styles */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+/* Skill badge styles */
+.skill-badge {
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Experience item */
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+
 /* Footer styles */
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: #222;
+  color: #fff;
   text-align: center;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
+
