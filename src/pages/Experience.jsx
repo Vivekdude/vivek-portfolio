@@ -1,21 +1,14 @@
 import React from 'react';
+import Section from '../components/Section';
+import ExperienceItem from '../components/ExperienceItem';
 
 function Experience({ data }) {
   return (
-    <div className="experience">
-      <h2>Professional Experience</h2>
+    <Section title="Professional Experience">
       {data.map((job, index) => (
-        <div key={index}>
-          <h3>{job.company}</h3>
-          <p>{job.duration}</p>
-          <ul>
-            {job.responsibilities.map((task, idx) => (
-              <li key={idx}>{task}</li>
-            ))}
-          </ul>
-        </div>
+        <ExperienceItem key={index} {...job} />
       ))}
-    </div>
+    </Section>
   );
 }
 

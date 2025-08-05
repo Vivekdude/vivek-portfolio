@@ -1,15 +1,15 @@
 import React from 'react';
+import Section from '../components/Section';
 
 function Certifications({ data }) {
   return (
-    <div className="certifications">
-      <h2>Certifications</h2>
+    <Section title="Certifications">
       <ul>
         {data.map((cert, index) => (
           <li key={index}>{cert}</li>
         ))}
       </ul>
-    </div>
+    </Section>
   );
 }
 

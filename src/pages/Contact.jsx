@@ -1,13 +1,17 @@
 import React from 'react';
+import Section from '../components/Section';
 
 function Contact({ data }) {
   return (
-    <div className="contact">
-      <h2>Contact Information</h2>
-      <p>Email: {data.email}</p>
+    <Section title="Contact Information">
+      <p>
+        Email: <a href={`mailto:${data.email}`}>{data.email}</a>
+      </p>
       <p>Phone: {data.phone}</p>
-      <p>LinkedIn: <a href={data.linkedin} target="_blank" rel="noopener noreferrer">{data.linkedin}</a></p>
-    </div>
+      <p>
+        LinkedIn: <a href={data.linkedin} target="_blank" rel="noopener noreferrer">{data.linkedin}</a>
+      </p>
+    </Section>
   );
 }
 
